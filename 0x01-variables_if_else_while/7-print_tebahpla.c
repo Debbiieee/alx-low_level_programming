@@ -1,21 +1,25 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
 /**
-* main - main block* Description: prints all single digit numbers of base 10
-* starting from 0, followed by a new line.
-* Return: 0
-*/
+ * main - print the latterss of the alphabet
+ * 
+ * Description: print the letters of the alphabet in reverse
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-		char c = 'z';
+	int i = 122;
 
-			while (c >= 'a')
-					{
-								putchar(c);
-										c--;
-											}
+	while (i > 96)
+	{
 
-				putchar('\n');
-					return (0);
+		putchar(i);
+		i--;
+
+	}
+	putchar(10);
+
+	return (0);
 }
