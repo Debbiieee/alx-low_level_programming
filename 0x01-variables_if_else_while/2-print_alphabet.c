@@ -1,14 +1,23 @@
-#include <stdio.h
+#include <stdio.h>
+
 /**
-* main - Prints the alphabet in lowercase.
-* 
-* Return: Always 0
-*/
+ * main - print the letters of the alphabet
+ *
+ * Description: print the letters of the alphabet
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-char letter;
-for (letter = 'a';letter <= 'z'; letter++)
-putchar(letter)
-putchar('\n');
-return (0);
+	int i = 97;
+
+	while (i < 123)
+	{
+		putchar(i);
+		i++;
+	}
+	putchar(10);
+
+	return (0);
 }
